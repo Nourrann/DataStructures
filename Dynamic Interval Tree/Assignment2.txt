@@ -1,0 +1,44 @@
+Assignment 2 [10 marks]
+Deadline: 30 Dec 2022
+
+* This assignment can be done in teams of 5 students or less.
+* Team members must be from the same lab so the TA can discuss all of them during one lab time.
+* Each team must come up with their own implementation.
+* Each student in the team must understand all details of the implementation.
+* The code must contain no more than 15,000 characters.
+* Your code must NOT include any TAB character. Convert each TAB to 4 spaces before submitting.
+* You are not allowed to copy any piece of code from the internet or from any other resource.
+* You are not allowed to copy any piece of code from other students.
+* You are not allowed to include any files or built-in libraries, except for the described ones.
+* Your coding style must follow exactly the coding style specified in CodingStyle.pdf.
+* Half the mark is dedicatd to comments explaining the code, test cases, and following CodingStyle.
+* If you have issue regarding the assignment, contact the TA, not the doctor.
+* Get your submission on a flash drive and discuss your submission with the TA during the first lab after the deadline.
+* The TA will not tell you your mark. He will report his evaluation to me and I will make the final evaluation.
+* You are allowed to submit after the deadline with 10% mark-deduction for each late day.
+
+* Write a C++ code that does the following:
+* You are not allowed to use any built-in functions except: <cstdlib>, <cstdio>, <cstring>, <iostream>.
+* You are not allowed to use string class, vector, or anything from STL libraries.
+* Implement a dynamic interval tree data structure as described in our lecture. An interval is two integers.
+* For simplicity, the underlying binary search tree structure must be your implementation of an unbalanced binary search tree.
+* The dynamic interval tree must support InsertInterval(), DeleteInterval(), SearchInterval().
+* SearchInterval() must return all intervals overlapping with the parameter interval, by first getting one overlapping interval, then deleting it, and so on. Then, all such intervals must be inserted again in the tree to restore its status.
+* Other methods are NOT allowed.
+* Use your implementation of everything.
+* Use only standard C++.
+* You are not allowed to include any files or built-in libraries, except for output.
+* Write the main() in your submission after adding at least 30 test cases.
+* Half the mark is dedicatd to comments explaining the code before each code line, test cases, and following the CodingStyle.pdf file.
+
+To submit the code:
+* Write your code in exactly one cpp text file such as myfile.cpp.
+* Make sure that myfile.cpp contains the actual code, for example open it in Notepad (do not confuse it with cbp file).
+* Encode the file using the assign_encoder tool as the following:
+g++ -O3 -o assign_encoder.exe assign_encoder.cpp
+assign_encoder.exe ./myfile.cpp 2 3 20101111 20102222 20113333
+* The 2 in the above line is the assignment ID. The 3 in the above line is number of students.
+* Open the resulting assign_2_20101111_20102222_20113333.bin file in a text editor.
+* Make sure that the text-editor did not put any line-breaks (un-check the word-wrap option).
+* Copy all the text included in the file.
+* Paste the text in the dedicated Google Survey link, as well as your IDs. Make sure you choose the correct assignment course and type.
